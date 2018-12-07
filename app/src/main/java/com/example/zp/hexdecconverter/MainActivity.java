@@ -31,4 +31,8 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(this, Dec2HexActivity.class);
         startActivity(intent);
     }
+
+    public void enterTest (View view){
+
+    }
 }
