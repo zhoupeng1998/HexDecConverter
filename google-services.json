@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "95271063919",
+    "firebase_url": "https://jlab4-3d648.firebaseio.com",
+    "project_id": "jlab4-3d648",
+    "storage_bucket": "jlab4-3d648.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:95271063919:android:7827228f2282cbaa",
+        "android_client_info": {
+          "package_name": "com.example.zp.hexdecconverter"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "95271063919-6enjbl2ft8kih0a2qk1gc9s3fidj0oni.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC9rAzqExv_bkDLhuMsIKzW_p9X1ZHj6W8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
