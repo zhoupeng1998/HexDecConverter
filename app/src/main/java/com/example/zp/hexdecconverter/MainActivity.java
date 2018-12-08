@@ -22,4 +22,9 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(this, Dec2HexActivity.class);
         startActivity(intent);
     }
+
+    public void enterView (View view) {
+        Intent intent = new Intent(this,ViewActivity.class);
+        startActivity(intent);
+    }
 }

@@ -7,8 +7,8 @@ public class ConvertedEntry {
     private String id;
 
     public ConvertedEntry () {
-        this.strDec = "NA";
-        this.strHex = "NA";
+        this.strDec = "NaN";
+        this.strHex = "NaN";
     }
 
     public ConvertedEntry (String dec, String hex, String id) {
@@ -36,5 +36,9 @@ public class ConvertedEntry {
 
     public void setId(String id) {
         this.id = id;
+    }
+
+    public String toString() {
+        return strDec + ": " + strHex;
     }
 }

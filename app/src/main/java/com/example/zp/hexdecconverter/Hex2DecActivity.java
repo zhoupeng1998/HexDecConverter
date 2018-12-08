@@ -17,7 +17,7 @@ public class Hex2DecActivity extends ConvertActivity {
 
     public void convert (View view) {
         String output;
-        String input = field.getText().toString().toUpperCase();
+        String input = "0x" + field.getText().toString().toUpperCase();
         try {
             output = Long.toString(Long.parseLong(input,16));
             currentConverted = new ConvertedEntry(output, input);

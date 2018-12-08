@@ -30,10 +30,11 @@
             android:text="Decimal to Hex" />
 
         <Button
-            android:id="@+id/enterStoredButton"
+            android:id="@+id/enterViewButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Comming soon" />
+            android:onClick="enterView"
+            android:text="View All" />
     </LinearLayout>
 
 </android.support.constraint.ConstraintLayout>
