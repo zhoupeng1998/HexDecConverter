@@ -19,5 +19,6 @@
         android:layout_toRightOf="@id/textView_Dec"
         android:padding="10dip"
         android:textSize="16dip"
-        android:textStyle="bold"></TextView>
+        android:textStyle="bold">
+    </TextView>
 </RelativeLayout>

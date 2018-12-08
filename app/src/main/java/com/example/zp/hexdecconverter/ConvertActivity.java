@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.ListView;
@@ -44,7 +45,7 @@ public abstract class ConvertActivity extends AppCompatActivity {
         childEventListener = new ChildEventListener() {
             @Override
             public void onChildAdded(@NonNull DataSnapshot dataSnapshot, @Nullable String s) {
-                entryList.add(dataSnapshot.getValue(ConvertedEntry.class));
+                listAdapter.add(dataSnapshot.getValue(ConvertedEntry.class));
             }
 
             @Override

@@ -2,32 +2,32 @@ package com.example.zp.hexdecconverter;
 
 public class ConvertedEntry {
 
-    private String strDec;
-    private String strHex;
+    private String dec;
+    private String hex;
     private String id;
 
     public ConvertedEntry () {
-        this.strDec = "NaN";
-        this.strHex = "NaN";
+        this.dec = "NaN";
+        this.hex = "NaN";
     }
 
     public ConvertedEntry (String dec, String hex, String id) {
-        this.strDec = dec;
-        this.strHex = hex;
+        this.dec = dec;
+        this.hex = hex;
         this.id = id;
     }
 
     public ConvertedEntry (String dec, String hex) {
-        this.strDec = dec;
-        this.strHex = hex;
+        this.dec = dec;
+        this.hex = hex;
     }
 
     public String getDec() {
-        return strDec;
+        return dec;
     }
 
     public String getHex() {
-        return strHex;
+        return hex;
     }
 
     public String getId() {
@@ -39,6 +39,6 @@ public class ConvertedEntry {
     }
 
     public String toString() {
-        return strDec + ": " + strHex;
+        return dec + ": " + hex;
     }
 }
