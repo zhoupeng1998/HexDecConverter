@@ -1,15 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--  Single List Item Design -->
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:clickable="false"
+    android:focusable="false">
     <TextView xmlns:android="http://schemas.android.com/apk/res/android"
         android:id="@+id/textView_Dec"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:padding="10dip"
         android:textSize="16dip"
-        android:textStyle="bold" >
+        android:textStyle="bold"
+        android:clickable="false"
+        android:focusable="false">
     </TextView>
 
     <TextView xmlns:android="http://schemas.android.com/apk/res/android"
@@ -17,6 +22,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_toRightOf="@id/textView_Dec"
+        android:clickable="false"
+        android:focusable="false"
         android:padding="10dip"
         android:textSize="16dip"
         android:textStyle="bold">

@@ -17,6 +17,7 @@ public class ConvertedEntry {
         this.id = id;
     }
 
+
     public ConvertedEntry (String dec, String hex) {
         this.dec = dec;
         this.hex = hex;
@@ -37,6 +38,10 @@ public class ConvertedEntry {
     public void setId(String id) {
         this.id = id;
     }
+
+    public void setdec(String strDec) {this.strDec = strDec; }
+
+    public void sethex(String strHex) {this.strHex = strHex; }
 
     public String toString() {
         return dec + ": " + hex;

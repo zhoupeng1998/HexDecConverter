@@ -1,3 +1,6 @@
+//Author: Peng Zhou
+//This activities converts decimal to hex and store it to firebase
+
 package com.example.zp.hexdecconverter;
 
 import android.os.Bundle;
