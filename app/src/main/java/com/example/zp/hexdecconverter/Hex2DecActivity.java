@@ -1,3 +1,6 @@
+//Author: Peng Zhou
+//This activities converts Hex to decimal and store it to firebase
+
 package com.example.zp.hexdecconverter;
 
 import android.nfc.Tag;
@@ -14,6 +17,7 @@ public class Hex2DecActivity extends ConvertActivity {
     protected void onCreate (Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         text.setText("Hex to Decimal");
+        //TODO: cannot convert if entered "0x", eg:0xFF
         field.setText("");
     }
 

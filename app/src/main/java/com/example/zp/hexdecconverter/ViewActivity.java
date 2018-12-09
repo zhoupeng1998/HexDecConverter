@@ -1,3 +1,7 @@
+//Authro: Linchuan Chen
+//This activities read all stored entries from firebase to a list view and delete it upon click
+
+
 package com.example.zp.hexdecconverter;
 
 import android.os.Bundle;
@@ -31,7 +35,7 @@ public class ViewActivity extends AppCompatActivity {
         myRef = database.getReference("entries");
 
         // Set up an array that will have the contents that you want to display
-        final ArrayList<ConvertedEntry> contactsList = new ArrayList<ConvertedEntry>();
+        final ArrayList<ConvertedEntry> entryList = new ArrayList<ConvertedEntry>();
 
         // Sets up the event listener that will specify what happens when access of a node
         // occurs in the database
@@ -71,7 +75,7 @@ public class ViewActivity extends AppCompatActivity {
         myRef.addChildEventListener(childEventListener);
 
         // Sets up the list adapter to read from the results array
-        listAdapter = new EntryAdapter(this, contactsList );
+        listAdapter = new EntryAdapter(this, entryList );
         ListView results = findViewById(R.id.dataList);
 
 
@@ -82,7 +86,7 @@ public class ViewActivity extends AppCompatActivity {
                 Log.w("deleting ID:", Long.toString(id));
                 Log.w("deleting item:", entry.getId());
                 myRef.child(entry.getId()).removeValue();
-                contactsList.remove(entry);
+                entryList.remove(entry);
                 listAdapter.notifyDataSetChanged();
 
             }
