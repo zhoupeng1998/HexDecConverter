@@ -1,3 +1,6 @@
+//Author: Linchuan Chen
+//Converted entry object class
+
 package com.example.zp.hexdecconverter;
 
 public class ConvertedEntry {
@@ -38,10 +41,6 @@ public class ConvertedEntry {
     public void setId(String id) {
         this.id = id;
     }
-
-    public void setdec(String strDec) {this.strDec = strDec; }
-
-    public void sethex(String strHex) {this.strHex = strHex; }
 
     public String toString() {
         return dec + ": " + hex;

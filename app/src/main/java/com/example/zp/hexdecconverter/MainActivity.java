@@ -1,3 +1,6 @@
+//Author: Peng Zhou
+//entry point of the program
+
 package com.example.zp.hexdecconverter;
 
 import android.content.Intent;
@@ -25,6 +28,11 @@ public class MainActivity extends AppCompatActivity {
 
     public void enterView (View view) {
         Intent intent = new Intent(this,ViewActivity.class);
+        startActivity(intent);
+    }
+
+    public void enterSearch (View view) {
+        Intent intent = new Intent(this,SearchActivity.class);
         startActivity(intent);
     }
 }

@@ -1,5 +1,5 @@
 //Author: Peng Zhou
-//This activities converts decimal to hex and store it to firebase
+//This activities converts decimal to hex
 
 package com.example.zp.hexdecconverter;
 

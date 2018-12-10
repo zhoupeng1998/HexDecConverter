@@ -34,7 +34,14 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:onClick="enterView"
-            android:text="View All" />
+            android:text="View All / remove" />
+
+        <Button
+            android:id="@+id/enterSearchButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="enterSearch"
+            android:text="Search" />
     </LinearLayout>
 
 </android.support.constraint.ConstraintLayout>

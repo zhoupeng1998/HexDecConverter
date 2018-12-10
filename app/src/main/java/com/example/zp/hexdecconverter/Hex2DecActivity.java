@@ -1,15 +1,11 @@
-//Author: Peng Zhou
-//This activities converts Hex to decimal and store it to firebase
+//Author: Linchuan Chen
+//This activities converts Hex to decimal
 
 package com.example.zp.hexdecconverter;
 
-import android.nfc.Tag;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
-import android.widget.EditText;
-import android.widget.TextView;
 
 public class Hex2DecActivity extends ConvertActivity {
 
@@ -17,17 +13,18 @@ public class Hex2DecActivity extends ConvertActivity {
     protected void onCreate (Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         text.setText("Hex to Decimal");
-        //TODO: cannot convert if entered "0x", eg:0xFF
         field.setText("");
     }
 
     public void convert (View view) {
         String output;
-        String input = "0x" + field.getText().toString().toUpperCase();
-        Log.w("input:", input);
+        String input = field.getText().toString().toUpperCase();
+        if (input.substring(0,2).equals("0X")) {
+            input = input.substring(2);
+        }
         try {
-            output = Long.toString(Long.parseLong(field.getText().toString(),16));
-            currentConverted = new ConvertedEntry(output, input);
+            output = Long.toString(Long.parseLong(input,16));
+            currentConverted = new ConvertedEntry(output, "0x" + input);
         } catch (NumberFormatException nfe) {
             output = "Exceeds radix limit";
             Log.w("exception:", nfe.getMessage());

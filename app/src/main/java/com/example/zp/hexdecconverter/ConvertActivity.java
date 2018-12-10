@@ -1,3 +1,6 @@
+//Author: Peng Zhou
+//Parent class of convertion from Hex to decimal and from decimal to Hex, store the results to db
+
 package com.example.zp.hexdecconverter;
 
 import android.os.Bundle;
@@ -37,7 +40,6 @@ public abstract class ConvertActivity extends AppCompatActivity {
         setContentView(R.layout.activity_convert);
         text = findViewById(R.id.resultText);
         field = findViewById(R.id.inputField);
-        //database = FirebaseDatabase.getInstance("https://hexdecconverter-38aed.firebaseio.com/");
         database = FirebaseDatabase.getInstance();
         myRef = database.getReference("entries");
         entryList = new ArrayList<ConvertedEntry>();

@@ -19,6 +19,7 @@
         <activity android:name=".Hex2DecActivity"></activity>
         <activity android:name=".Dec2HexActivity"></activity>
         <activity android:name=".ViewActivity"></activity>
+        <activity android:name=".SearchActivity"></activity>
     </application>
 
 </manifest>
